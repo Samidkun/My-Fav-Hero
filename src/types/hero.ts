@@ -10,6 +10,17 @@ export interface HeroStats {
   difficulty: number;
 }
 
+export interface BuildItem {
+  name: string;
+  description: string;
+  type: 'core' | 'boots' | 'situational';
+}
+
+export interface SkillOrder {
+  priority: string;
+  explanation: string;
+}
+
 export interface Hero {
   id: number;
   name: string;
@@ -23,4 +34,6 @@ export interface Hero {
   weaknesses: string[];
   tips: string[];
   stats: HeroStats;
+  buildItems?: BuildItem[];
+  skillOrder?: SkillOrder;
 }

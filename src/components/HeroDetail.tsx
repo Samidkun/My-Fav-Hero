@@ -6,8 +6,10 @@ import {
   TrendingUp,
   TrendingDown,
   Lightbulb,
+  Package,
 } from "lucide-react";
 import { useState } from "react";
+import { HeroBuild } from "./herobuild";
 
 interface HeroDetailProps {
   hero: Hero;
@@ -15,9 +17,9 @@ interface HeroDetailProps {
 }
 
 export function HeroDetail({ hero, onBack }: HeroDetailProps) {
-  const [activeTab, setActiveTab] = useState<"skills" | "stats" | "tips">(
-    "skills"
-  );
+  const [activeTab, setActiveTab] = useState<
+    "skills" | "stats" | "tips" | "build"
+  >("skills");
   const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);
 
   return (
@@ -146,6 +148,21 @@ export function HeroDetail({ hero, onBack }: HeroDetailProps) {
             }`}
           />
           <span>Tips</span>
+        </button>
+        <button
+          onClick={() => setActiveTab("build")}
+          className={`flex-1 flex items-center justify-center gap-2 px-6 py-3 rounded-xl transition-all duration-300 ${
+            activeTab === "build"
+              ? "bg-gradient-to-r from-gray-700 to-gray-800 text-white shadow-lg scale-105"
+              : "text-gray-400 hover:text-white hover:bg-white/5 hover:scale-105"
+          }`}
+        >
+          <Package
+            className={`w-4 h-4 ${
+              activeTab === "build" ? "animate-float" : ""
+            }`}
+          />
+          <span>Build</span>
         </button>
       </div>
 
@@ -281,6 +298,8 @@ export function HeroDetail({ hero, onBack }: HeroDetailProps) {
             </div>
           </div>
         )}
+
+        {activeTab === "build" && <HeroBuild hero={hero} />}
       </div>
     </div>
   );

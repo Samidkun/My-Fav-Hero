@@ -13,8 +13,7 @@ const heroes: Hero[] = [
     role: "Fighter",
     specialty: "Charge/Damage",
     difficulty: "Medium",
-    image:
-      "https://images.unsplash.com/photo-1697400068972-6bfebeb8be43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJyaW9yJTIwZmlnaHRlcnxlbnwxfHx8fDE3NjcxOTEyODF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/lapulapu.jpg",
     description:
       "A fighter hero with dual blades who has high burst damage capabilities. Lapu-Lapu is very strong in teamfights with an ultimate that deals massive area damage.",
     skills: [
@@ -60,6 +59,61 @@ const heroes: Hero[] = [
       controlEffect: 70,
       difficulty: 60,
     },
+    skillOrder: {
+      priority: "Ultimate > Skill 2 > Skill 1",
+      explanation:
+        "Prioritize ultimate first for maximum burst damage potential. Then max skill 2 for crowd control and damage, followed by skill 1 for mobility and chase potential.",
+    },
+    buildItems: [
+      {
+        name: "Bloodlust Axe",
+        description:
+          "Core item for spell vamp and cooldown reduction. Essential for sustain in teamfights.",
+        type: "core",
+      },
+      {
+        name: "War Axe",
+        description:
+          "Increases physical attack and armor penetration over time. Great for sustained damage.",
+        type: "core",
+      },
+      {
+        name: "Hunter Strike",
+        description:
+          "Provides penetration and movement speed boost after kills. Perfect for aggressive plays.",
+        type: "core",
+      },
+      {
+        name: "Warrior Boots",
+        description:
+          "Basic defense with physical defense. Good against physical damage heavy teams.",
+        type: "boots",
+      },
+      {
+        name: "Tough Boots",
+        description:
+          "Alternative boots with magic resist and tenacity. Use against CC-heavy teams.",
+        type: "boots",
+      },
+      {
+        name: "Blade of Despair",
+        description:
+          "Massive damage boost when enemies are low HP. Great for securing kills.",
+        type: "situational",
+      },
+      {
+        name: "Immortality",
+        description:
+          "Resurrection passive for survivability. Good when you're the main damage dealer.",
+        type: "situational",
+      },
+      {
+        name: "Malefic Roar",
+        description:
+          "High armor penetration. Use against tanky enemy compositions.",
+        type: "situational",
+      },
+    ],
   },
   {
     id: 2,
@@ -67,8 +121,7 @@ const heroes: Hero[] = [
     role: "Fighter/Tank",
     specialty: "Regen/Damage",
     difficulty: "Medium",
-    image:
-      "https://images.unsplash.com/photo-1667477603006-40e97d34afdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcmFnb24lMjB3YXJyaW9yJTIwZGFya3xlbnwxfHx8fDE3NjcxOTEyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "yuzhong.jpg",
     description:
       "The Black Dragon with exceptional sustain through lifesteal. Yu Zhong is very durable in lane and can survive in the middle of teamfights while dealing consistent damage.",
     skills: [
@@ -115,6 +168,61 @@ const heroes: Hero[] = [
       controlEffect: 60,
       difficulty: 65,
     },
+    skillOrder: {
+      priority: "Skill 1 > Skill 2 > Ultimate",
+      explanation:
+        "Max skill 1 first for maximum sustain and damage output. Then skill 2 for CC and gap close. Ultimate is important but gets value from base stats, so max it last.",
+    },
+    buildItems: [
+      {
+        name: "Cursed Helmet",
+        description:
+          "Provides HP and magic damage aura. Perfect for Yu Zhong's playstyle of staying in teamfights.",
+        type: "core",
+      },
+      {
+        name: "Oracle",
+        description:
+          "Increases shield and HP regen effectiveness. Synergizes perfectly with Yu Zhong's passive.",
+        type: "core",
+      },
+      {
+        name: "Brute Force Breastplate",
+        description:
+          "Stacking defense and movement speed. Great for sustained combat.",
+        type: "core",
+      },
+      {
+        name: "Tough Boots",
+        description:
+          "Tenacity and magic resist. Essential against CC-heavy teams.",
+        type: "boots",
+      },
+      {
+        name: "Warrior Boots",
+        description:
+          "Physical defense alternative. Use against full physical damage teams.",
+        type: "boots",
+      },
+      {
+        name: "Dominance Ice",
+        description:
+          "Anti-heal and mana. Counters enemy lifesteal and sustain heroes.",
+        type: "situational",
+      },
+      {
+        name: "Immortality",
+        description:
+          "Second life for extended teamfight presence. Good when you're main frontline.",
+        type: "situational",
+      },
+      {
+        name: "Athena's Shield",
+        description:
+          "Magic shield against burst magic damage. Use against mage-heavy teams.",
+        type: "situational",
+      },
+    ],
   },
   {
     id: 3,
@@ -122,8 +230,7 @@ const heroes: Hero[] = [
     role: "Assassin",
     specialty: "Chase/Damage",
     difficulty: "Hard",
-    image:
-      "https://images.unsplash.com/photo-1671647694655-95abb95fe5fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3Nhc3NpbiUyMHdhcnJpb3IlMjB3b21hbnxlbnwxfHx8fDE3NjcxOTEyODJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "benedetta.jpeg",
     description:
       "A shadow ranger with high mobility and deadly burst damage. Benedetta has unique mechanics with sword intent and dashes that can dodge enemy skills.",
     skills: [
@@ -172,6 +279,61 @@ const heroes: Hero[] = [
       controlEffect: 50,
       difficulty: 90,
     },
+    skillOrder: {
+      priority: "Skill 1 > Ultimate > Skill 2",
+      explanation:
+        "Max skill 1 first for mobility and damage - it's your main tool for dodging and dealing damage. Then ultimate for burst combo potential. Skill 2 is maxed last as it provides utility that doesn't scale as much with levels.",
+    },
+    buildItems: [
+      {
+        name: "Endless Battle",
+        description:
+          "True damage and lifesteal. Perfect for Benedetta's hit-and-run playstyle.",
+        type: "core",
+      },
+      {
+        name: "Hunter Strike",
+        description:
+          "Penetration and movement speed on kill. Essential for chasing and mobility.",
+        type: "core",
+      },
+      {
+        name: "Blade of Despair",
+        description:
+          "Massive damage boost. Core for maximum burst damage potential.",
+        type: "core",
+      },
+      {
+        name: "Warrior Boots",
+        description:
+          "Physical defense for early game survivability. Standard choice.",
+        type: "boots",
+      },
+      {
+        name: "Tough Boots",
+        description:
+          "Tenacity and magic resist. Use against heavy CC compositions.",
+        type: "boots",
+      },
+      {
+        name: "Malefic Roar",
+        description:
+          "High armor penetration. Use against tank-heavy enemy teams.",
+        type: "situational",
+      },
+      {
+        name: "Rose Gold Meteor",
+        description:
+          "Shield and lifesteal. Provides survivability when diving backline.",
+        type: "situational",
+      },
+      {
+        name: "Wind of Nature",
+        description:
+          "Physical immunity active. Counter to marksmen and physical burst heroes.",
+        type: "situational",
+      },
+    ],
   },
 ];
 

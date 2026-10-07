@@ -81,7 +81,7 @@ export function ProfileStats() {
             >
               <div className="inline-block px-4 py-2 bg-gray-700/30 border border-gray-600/30 rounded-full animate-scale-in">
                 <span className="text-gray-300 animate-shimmer">
-                  👋 Hi! Let me introduce myself
+                  👋 Hi! Let me introduce myself,I Am Dimas Arya Sadewa
                 </span>
               </div>
 
@@ -90,7 +90,7 @@ export function ProfileStats() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-500 animate-gradient">
                   more than 1000 matches
                 </span>{" "}
-                and still grinding to this day.
+                and still Playing Till Now
               </h2>
             </div>
 
@@ -106,7 +106,7 @@ export function ProfileStats() {
                 From all the matches I've played, my win rate stands at{" "}
                 <span className="inline-flex items-center gap-2 px-3 py-1 bg-gray-700/40 border border-gray-600/40 rounded-lg text-gray-200 hover:scale-110 transition-transform hover:bg-gray-700/60 cursor-default">
                   <TrendingUp className="w-4 h-4 animate-bounce" />
-                  {isVisible && <AnimatedNumber value={67} />}%
+                  {isVisible && <AnimatedNumber value={55} />}%
                 </span>{" "}
                 — pretty good for putting pressure on enemies.
               </p>
@@ -118,15 +118,15 @@ export function ProfileStats() {
                     : "opacity-0 -translate-x-10"
                 }`}
               >
-                My total wins have reached{" "}
+                My total Matchs have reached{" "}
                 <span className="inline-flex items-center gap-2 px-3 py-1 bg-gray-700/40 border border-gray-600/40 rounded-lg text-gray-200 hover:scale-110 transition-transform hover:bg-gray-700/60 cursor-default">
                   <Award className="w-4 h-4 animate-float" />
-                  {isVisible && <AnimatedNumber value={844} />} wins
+                  {isVisible && <AnimatedNumber value={11141} />} Matches
                 </span>{" "}
                 with{" "}
                 <span className="inline-flex items-center gap-2 px-3 py-1 bg-gray-700/40 border border-gray-600/40 rounded-lg text-gray-200 hover:scale-110 transition-transform hover:bg-gray-700/60 cursor-default">
                   <Target className="w-4 h-4 animate-spin-slow" />
-                  {isVisible && <AnimatedNumber value={234} />} MVP
+                  {isVisible && <AnimatedNumber value={2212} />} MVP
                 </span>
                 . Love being the team carry!
               </p>
@@ -138,12 +138,12 @@ export function ProfileStats() {
                     : "opacity-0 translate-x-10"
                 }`}
               >
-                Currently sitting comfortably at rank{" "}
+                Currently My Highest Rank is{" "}
                 <span className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 rounded-lg text-white shadow-lg shadow-gray-900/50 border border-gray-600/50 hover:scale-110 transition-all hover:shadow-gray-700/50 cursor-default animate-gradient">
                   <Gamepad2 className="w-5 h-5 animate-float-slow" />
-                  Mythic III
+                  Mythical Immortal
                 </span>{" "}
-                and my next target is to reach Mythical Glory.
+                If You Want To Watch My Gameplay,This Is My Tiktok Account
               </p>
             </div>
 
@@ -167,7 +167,7 @@ export function ProfileStats() {
                   >
                     ⚔️
                   </div>
-                  <div className="text-gray-200 mb-1">45% Fighter</div>
+                  <div className="text-gray-200 mb-1">80% Fighter</div>
                   <div className="text-gray-600">Main role</div>
                 </div>
                 <div
@@ -180,7 +180,7 @@ export function ProfileStats() {
                   >
                     🛡️
                   </div>
-                  <div className="text-gray-200 mb-1">30% Tank</div>
+                  <div className="text-gray-200 mb-1">15% Tank</div>
                   <div className="text-gray-600">When team needs</div>
                 </div>
                 <div
@@ -193,7 +193,7 @@ export function ProfileStats() {
                   >
                     ⚡
                   </div>
-                  <div className="text-gray-200 mb-1">25% Assassin</div>
+                  <div className="text-gray-200 mb-1">5% Assassin</div>
                   <div className="text-gray-600">For fun</div>
                 </div>
               </div>
